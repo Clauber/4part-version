@@ -1,0 +1,87 @@
+{
+  "name": "nonstandard-version",
+  "version": "1.0.0",
+  "description": "A fork of standard-version that supports 4-part versioning (x.y.z.a) with automatic CHANGELOG generation",
+  "bin": "bin/cli.js",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "bin",
+    "lib",
+    "index.js",
+    "index.d.ts"
+  ],
+  "scripts": {
+    "fix": "eslint . --fix",
+    "posttest": "eslint .",
+    "test": "nyc mocha --timeout=30000",
+    "test:unit": "mocha --exclude test/git.spec.js",
+    "coverage": "nyc report --reporter=lcov",
+    "release": "bin/cli.js",
+    "build": "tsc",
+    "lint": "eslint .",
+    "prepare": "npm run build"
+  },
+  "nyc": {
+    "exclude": [
+      "tmp/**"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clauber/nonstandard-version.git"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "keywords": [
+    "conventional-changelog",
+    "recommended",
+    "changelog",
+    "automatic",
+    "workflow",
+    "version",
+    "semver",
+    "4-part-version",
+    "revision"
+  ],
+  "author": "Clauber Oliveira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/clauber/nonstandard-version/issues"
+  },
+  "homepage": "https://github.com/clauber/nonstandard-version#readme",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "conventional-changelog": "3.1.25",
+    "conventional-changelog-config-spec": "2.1.0",
+    "conventional-changelog-conventionalcommits": "4.6.3",
+    "conventional-recommended-bump": "6.1.0",
+    "detect-indent": "^6.0.0",
+    "detect-newline": "^3.1.0",
+    "dotgitignore": "^2.1.0",
+    "figures": "^3.1.0",
+    "find-up": "^5.0.0",
+    "git-semver-tags": "^4.0.0",
+    "semver": "^7.1.1",
+    "stringify-package": "^1.0.1",
+    "yargs": "^16.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/semver": "^7.5.0",
+    "chai": "^4.2.0",
+    "eslint": "^7.14.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.0.0",
+    "mocha": "^8.2.1",
+    "mock-fs": "^4.13.0",
+    "mockery": "^2.1.0",
+    "nyc": "^15.1.0",
+    "shelljs": "^0.8.4",
+    "std-mocks": "^1.0.1",
+    "typescript": "^5.0.0"
+  }
+}
