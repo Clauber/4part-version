@@ -1,0 +1,18 @@
+{
+  "name": "test-clean",
+  "version": "6.1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "../bin/cli.js",
+    "release:major": "npm run release -- --release-as major",
+    "release:minor": "npm run release -- --release-as minor",
+    "release:patch": "npm run release -- --release-as patch",
+    "release:revision": "npm run release -- --release-as revision",
+    "release:match": "npm run release -- --release-version"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
