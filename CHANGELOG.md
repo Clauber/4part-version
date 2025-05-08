@@ -1,6 +1,9 @@
 # Changelog
 
 All notable changes to this project will be documented in this file.
+
+## [](https://github.com/Clauber/nonstandard-version/compare/v1.0.0...v) (2025-05-08)
+
 ## [](https://github.com/Clauber/nonstandard-version/compare/v1.0.0...v) (2025-05-08)
 
  See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.

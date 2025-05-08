@@ -1,6 +1,6 @@
 {
   "name": "4part-version",
-  "version": "1.0.1.0",
+  "version": "1.0.1.1",
   "description": "A fork of standard-version that supports 4-part versioning (x.y.z.a) with automatic CHANGELOG generation",
   "bin": {
     "4part-version": "bin/cli.js"
