@@ -1,6 +1,6 @@
 {
   "name": "4part-version",
-  "version": "1.0.0",
+  "version": "1.0.1.0",
   "description": "A fork of standard-version that supports 4-part versioning (x.y.z.a) with automatic CHANGELOG generation",
   "bin": {
     "4part-version": "bin/cli.js"
@@ -20,7 +20,16 @@
     "test:unit": "mocha --exclude test/git.spec.js",
     "coverage": "nyc report --reporter=lcov",
     "release": "bin/cli.js",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "release:major": "npx 4part-version --release-as major",
+    "release:minor": "npx 4part-version --release-as minor",
+    "release:patch": "npx 4part-version --release-as patch",
+    "release:revision": "npx 4part-version --release-as revision",
+    "release:match": "npx 4part-version --release-version",
+    "release:prerelease": "npx 4part-version --prerelease",
+    "release:prerelease-alpha": "npx 4part-version --prerelease alpha",
+    "release:prerelease-beta": "npx 4part-version --prerelease beta",
+    "release:prerelease-rc": "npx 4part-version --prerelease rc"
   },
   "nyc": {
     "exclude": [
